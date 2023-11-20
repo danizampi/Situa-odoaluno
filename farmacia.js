@@ -6,8 +6,8 @@ const resp2 = document.querySelector("#outResp2")
 
 
 
-frm.adEventListener("submit", (e) =>{
-    e.presentDefault()
+frm.addEventListener("submit", (e) =>{
+    e.preventDefault()
 
     const valor = Number(frm.inValor.value)
     resp1.innerText = `Valor da compra: R$ ${valor.toFixed(2)}`
